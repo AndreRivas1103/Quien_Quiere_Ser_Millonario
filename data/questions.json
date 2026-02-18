@@ -1,0 +1,152 @@
+[
+    {
+        "question": "¿Cuál es la capital de Francia?",
+        "options": ["París", "Berlín", "Londres", "Madrid"],
+        "answer": 0,
+        "difficulty": 1
+    },
+    {
+        "question": "¿Cuál es el nombre del parque nacional ubicado en la región amazónica de Colombia que protege una gran diversidad de flora y fauna?",
+        "options": ["Parque Nacional Natural Tayrona", "Parque Nacional Natural Los Nevados", "Parque Nacional Natural El Cocuy", "Parque Nacional Natural Amacayacu"],
+        "answer": 3,
+        "difficulty": 2
+    },
+    {
+        "question": "¿Qué ciudad colombiana es conocida como la \"Capital del Oro Blanco\" debido a su importante producción de sal?",
+        "options": ["Zipaquirá", "Nemocón", "Cúcuta", "La Guajira"],
+        "answer": 0,
+        "difficulty": 2
+    },
+    {
+        "question": "¿Cuándo se fundó la ciudad de Bogotá?",
+        "options": ["El 29 de julio de 1525", "El 8 de octubre de 1558", "El 6 de agosto de 1538", "El 12 de abril de 1546"],
+        "answer": 2,
+        "difficulty": 3
+    },
+    {
+        "question": "¿Cuál es la altura aproximada del Cerro del Quinini, una montaña en Colombia conocida por su misteriosa niebla perpetua?",
+        "options": ["2.000 metros", "3.500 metros", "4.800 metros", "6.200 metros"],
+        "answer": 1,
+        "difficulty": 3
+    },
+    {
+        "question": "¿Qué río atraviesa la ciudad de Cali y es famoso por sus rápidos y practicantes de deportes acuáticos?",
+        "options": ["Río Bogotá", "Río Cauca", "Río Magdalena", "Río Caquetá"],
+        "answer": 1,
+        "difficulty": 2
+    },
+    {
+        "question": "¿Cuál es el nombre de la famosa danza colombiana que representa la lucha entre el bien y el mal, y suele interpretarse en festivales religiosos?",
+        "options": ["Danza del Garabato", "Danza del Diablo", "Danza de la Culebra", "Danza de los Congos"],
+        "answer": 1,
+        "difficulty": 3
+    },
+    {
+        "question": "¿Cuál es el nombre del fenómeno natural en Colombia que consiste en la formación de miles de luciérnagas sincronizadas que iluminan los bosques?",
+        "options": ["Mariposas amarillas", "Flores de luna", "Ríos de estrellas", "Mar de luciérnagas"],
+        "answer": 3,
+        "difficulty": 4
+    },
+    {
+        "question": "¿Qué región de Colombia es famosa por sus tejidos de fique, utilizados en la confección de productos artesanales?",
+        "options": ["La Costa Caribe", "La Región Andina", "La Orinoquía", "La Amazonía"],
+        "answer": 1,
+        "difficulty": 2
+    },
+    {
+        "question": "¿Qué tipo de música colombiana es originaria de la región del Pacífico y se caracteriza por sus ritmos africanos y letras que narran historias de esclavitud y resistencia?",
+        "options": ["Vallenato", "Currulao", "Bambuco", "Joropo"],
+        "answer": 1,
+        "difficulty": 3
+    },
+    {
+        "question": "¿Qué fruta tropical originaria de Colombia se caracteriza por su pulpa suave y jugosa, y es conocida como \"la fruta de la pasión\"?",
+        "options": ["Guanábana", "Lulo", "Maracuyá", "Papaya"],
+        "answer": 2,
+        "difficulty": 2
+    },
+    {
+        "question": "¿Qué ciudad colombiana es conocida por su tradicional Carnaval de Blancos y Negros, declarado Patrimonio Cultural Inmaterial de la Humanidad por la UNESCO?",
+        "options": ["Pasto", "Barranquilla", "Cali", "Manizales"],
+        "answer": 0,
+        "difficulty": 2
+    },
+    {
+        "question": "¿Qué pintor colombiano es conocido por su estilo impresionista y sus obras que retratan la vida cotidiana de la costa caribeña?",
+        "options": ["Alejandro Obregón", "Débora Arango", "Enrique Grau", "Enrique Olaya Herrera"],
+        "answer": 2,
+        "difficulty": 4
+    },
+    {
+        "question": "¿En qué año llegó Cristóbal Colón a América?",
+        "options": ["1485", "1473", "1492", "1468"],
+        "answer": 2,
+        "difficulty": 1
+    },
+    {
+        "question": "¿Cuál es la etnia indígena más numerosa de Colombia?",
+        "options": ["Wayuu", "Emberá", "Sikuani", "Yaggua"],
+        "answer": 0,
+        "difficulty": 3
+    },
+    {
+        "question": "¿Cuándo ganó la selección colombiana la Copa América de Fútbol?",
+        "options": ["2010", "2005", "2001", "Ninguna de las anteriores"],
+        "answer": 2,
+        "difficulty": 3
+    },
+    {
+        "question": "¿Hasta qué año Panamá formó parte de Colombia?",
+        "options": ["1923", "1903", "1953", "1913"],
+        "answer": 1,
+        "difficulty": 3
+    },
+    {
+        "question": "¿Cuál fue el primer ciclista colombiano en participar en el Giro de Italia?",
+        "options": ["Lucho Herrera", "Oliverio Rincón", "Martín Emilio Rodríguez", "Nairo Quintana"],
+        "answer": 2,
+        "difficulty": 4
+    },
+    {
+        "question": "¿Cómo se llamó el pueblo fundado por los esclavos cimarrones rebeldes liderados por Benkós Biohó a comienzos del siglo XVI?",
+        "options": ["El pueblo de Montería", "San Basilio de Palenque", "La ciudad de Sincelejo", "El pueblo de Puerto Liberador"],
+        "answer": 1,
+        "difficulty": 4
+    },
+    {
+        "question": "¿Qué día se celebra el día de la independencia de Colombia?",
+        "options": ["20 de julio", "19 de abril", "18 de septiembre", "20 de junio"],
+        "answer": 0,
+        "difficulty": 1
+    },
+    {
+        "question": "¿Cuál es el río más largo de Colombia?",
+        "options": ["Río Magdalena", "Río Cauca", "Río Amazonas", "Río Orinoco"],
+        "answer": 0,
+        "difficulty": 2
+    },
+    {
+        "question": "¿En qué departamento de Colombia se encuentra el Desierto de la Tatacoa?",
+        "options": ["Huila", "La Guajira", "Cesar", "Santander"],
+        "answer": 0,
+        "difficulty": 3
+    },
+    {
+        "question": "¿Cuál es el volcán más alto de Colombia?",
+        "options": ["Nevado del Ruiz", "Nevado del Huila", "Nevado del Tolima", "Nevado del Cocuy"],
+        "answer": 0,
+        "difficulty": 3
+    },
+    {
+        "question": "¿Qué escritor colombiano ganó el Premio Nobel de Literatura en 1982?",
+        "options": ["Gabriel García Márquez", "Álvaro Mutis", "Fernando Vallejo", "Mario Vargas Llosa"],
+        "answer": 0,
+        "difficulty": 1
+    },
+    {
+        "question": "¿Cuál es la ciudad más poblada de Colombia?",
+        "options": ["Bogotá", "Medellín", "Cali", "Barranquilla"],
+        "answer": 0,
+        "difficulty": 1
+    }
+]

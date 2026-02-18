@@ -1,5 +1,6 @@
 import pygame
 import sys
+import os
 from random import shuffle, sample
 from time import sleep
 
@@ -35,16 +36,24 @@ def draw_window(screen, width, height, title_image, question, options, user_inpu
     # Dibujar las opciones de respuesta en la pantalla
     option_font = pygame.font.SysFont("Arial", 30)
     letters = ["A", "B", "C", "D"]
-    max_option_width = max(option_font.size(option)[0] for option in options)
+    # Filtrar opciones vacías para calcular el ancho máximo
+    non_empty_options = [opt for opt in options if opt]
+    if non_empty_options:
+        max_option_width = max(option_font.size(option)[0] for option in non_empty_options)
+    else:
+        max_option_width = 200
+    
     for i, (letter, option) in enumerate(zip(letters[:2], options[:2])):
-        text = option_font.render(f"{letter}. {option}", True, (255, 255, 255))
-        text_rect = text.get_rect(midleft=(width // 4 - max_option_width // 2, height // 2 + i * 90 + 85))
-        screen.blit(text, text_rect)
+        if option:  # Solo dibujar si la opción no está vacía
+            text = option_font.render(f"{letter}. {option}", True, (255, 255, 255))
+            text_rect = text.get_rect(midleft=(width // 4 - max_option_width // 2, height // 2 + i * 90 + 85))
+            screen.blit(text, text_rect)
 
     for i, (letter, option) in enumerate(zip(letters[2:], options[2:])):
-        text = option_font.render(f"{letter}. {option}", True, (255, 255, 255))
-        text_rect = text.get_rect(midleft=(width * 3 // 4 - max_option_width // 2, height // 2 + i * 90 + 85))
-        screen.blit(text, text_rect)
+        if option:  # Solo dibujar si la opción no está vacía
+            text = option_font.render(f"{letter}. {option}", True, (255, 255, 255))
+            text_rect = text.get_rect(midleft=(width * 3 // 4 - max_option_width // 2, height // 2 + i * 90 + 85))
+            screen.blit(text, text_rect)
 
     # Mostrar la respuesta ingresada por el usuario
     user_input_font = pygame.font.SysFont("Arial", 25)
@@ -69,8 +78,9 @@ def fifty_fifty(options, correct_answer):
     if not fifty_fifty.used:  # Solo se puede usar una vez
         fifty_fifty.used = True
         incorrect_options = [i for i in range(len(options)) if i != correct_answer]
-        options_to_remove = sample(incorrect_options, 2)
-        options = [option if i not in options_to_remove else "" for i, option in enumerate(options)]
+        if len(incorrect_options) >= 2:
+            options_to_remove = sample(incorrect_options, 2)
+            options = [option if i not in options_to_remove else "" for i, option in enumerate(options)]
     return options
 
 fifty_fifty.used = False
@@ -92,20 +102,22 @@ def wrap_text(text, font, max_width):
 
 # Función principal del juego
 def main():
+    # Solicitar el nombre del jugador ANTES de inicializar la ventana
+    player_name = input("Ingresa tu nombre: ")
+
+    # Imprimir las reglas del juego
+    print("Las reglas son simples: responde preguntas correctamente y avanza. Tienes la opción de 50/50 y cambiar de pregunta. Puedes retirarte en las estaciones 5 y 7.")
+    
     width = 1800
     height = 900
     screen = pygame.display.set_mode((width, height))
     pygame.display.set_caption("Quiz Game")
     
     # Cargar y ajustar la imagen del título
-    title_image = pygame.image.load("title.png")
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    title_image_path = os.path.join(script_dir, "title.png")
+    title_image = pygame.image.load(title_image_path)
     title_image = pygame.transform.scale(title_image, (300, 300))
-
-    # Solicitar el nombre del jugador
-    player_name = input("Ingresa tu nombre: ")
-
-    # Imprimir las reglas del juego
-    print("Las reglas son simples: responde preguntas correctamente y avanza. Tienes la opción de 50/50 y cambiar de pregunta. Puedes retirarte en las estaciones 5 y 7.")
 
     # Lista de preguntas
     questions = [
@@ -232,6 +244,9 @@ def main():
     user_input = ""
     correct_answers = 0
     score = 0
+    
+    # Reloj para controlar la velocidad del bucle
+    clock = pygame.time.Clock()
 
     # Bucle principal del juego
     while correct_answers < 10:
@@ -282,6 +297,9 @@ def main():
                     else:
                         question = questions.pop(0)
                         user_input = ""
+        
+        # Controlar la velocidad del bucle (60 FPS)
+        clock.tick(60)
 
 if __name__ == "__main__":
     main()

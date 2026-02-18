@@ -20,3 +20,7 @@ __pycache__/
 # Sistema operativo
 .DS_Store
 Thumbs.db
+
+# Archivos temporales
+*.log
+*.tmp

@@ -102,21 +102,4 @@ Las preguntas se almacenan en `data/questions.json`. Puedes agregar nuevas pregu
 
 Donde `answer` es el índice de la respuesta correcta (0-3) y `difficulty` es el nivel de dificultad (1-4).
 
-## 🛠️ Mejoras Implementadas
 
-- ✅ Código refactorizado con clases y funciones limpias
-- ✅ Separación de responsabilidades (UI, lógica, datos)
-- ✅ Diseño visual mejorado con colores y tipografía moderna
-- ✅ Sistema de niveles con premios escalonados
-- ✅ Pantallas de inicio y fin de juego
-- ✅ Manejo mejorado de comodines
-- ✅ Base de datos de preguntas en JSON
-- ✅ Mejor feedback visual para el usuario
-
-## 📄 Licencia
-
-Este proyecto es de código abierto y está disponible para uso educativo.
-
-## 👨‍💻 Autor
-
-Desarrollado con Python y Pygame
